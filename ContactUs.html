@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+
+<style type="text/css">
+    body {
+color:#ffffff;
+background-image: url("Images/bg.jpg");
+font-family: Arial;
+font-size: 15px;
+
+
+}
+#Header {
+background-color: #d3d3d3;
+margin: 10px;
+height: 200px;
+position:relative;
+}
+#Navbar {
+background-color: #d3d3d3;
+margin: 10px;
+height: 50px;
+line-height: 50px;
+}
+
+#contdiv
+{
+    background-color: #424242;
+width:60%;
+height:100%;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:20%;
+margin-right:1%;
+}
+.footer {
+background-color: #d3d3d3;
+color:#000000;
+width:98%;
+margin:1%;
+clear:both;
+}
+/** ######MENU SECTION##### **/
+
+#Navbar ul {
+list-style:none;
+margin-left:38px;
+
+}
+#Navbar ul li {
+background-color: #d3d3d3;
+height:50px;
+width:150px;
+text-align:center;
+line-height:50px;
+float:left;
+position:relative;
+color:#000000;
+}
+#Navbar ul li:hover {
+background-color: #000000;
+color: #ffffff;
+border-radius:10px;
+}
+#Navbar ul ul{
+padding:0px;
+margin:0px;
+position:absolute;
+display:none;
+z-index:999;
+}
+#Navbar ul li:hover > ul {
+display:block;
+}
+#Navbar ul ul li a{
+text-decoration:none;
+background-color:#d3d3d3;
+color:#000000;
+display:block;
+border-radius:10px;
+}
+#Navbar ul ul li a:hover {
+background-color: #000000;
+color: #ffffff;
+border-radius:10px;
+}
+.footer ul {
+list-style:none;
+margin-left:20%;
+
+}
+.footer ul li {
+background-color: #d3d3d3;
+height:45px;
+width:15%;
+text-align:center;
+line-height:45px;
+float:left;
+color:#000000;
+}
+
+.footer ul li a{
+text-decoration:none;
+background-color:#d3d3d3;
+color:#000000;
+display:block;
+}
+
+.footer ul li a:hover {
+background-color: #000000;
+color: #ffffff;
+border-radius:10px;
+}
+#logo {
+width:40%;
+max-height:100%;
+margin-top:0px;
+margin-bottom: 0px;
+margin-left:30%;
+margin-right:30%;
+padding:0px;
+position:absolute;
+z-index:3;
+}
+/** ##IMAGE SLIDER SECTION## **/
+
+
+
+#header1{
+height:200px;
+width:50%;
+float:right;
+position:absolute;
+z-index:1;
+
+}
+#header2{
+width:50%;
+height:200px;
+float:left;
+position:absolute;
+z-index:1;
+margin-left:50%;
+}
+
+</style>
+
+<title>
+NightSky
+</title>
+<link type="text/css" rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<div id="Header">
+<img id="logo" src="Images/logo.png"/>
+<img id="header1" src="Images/
+header1.jpg"/>
+
+<img id="header2" src="Images/header2.jpg"/>
+
+</div>
+<div id="Navbar">
+<ul>
+<li>Home
+<ul>
+<li><a href="home.html">HomePage</a></li>
+<li><a href="#" >Courses</a></li>
+<li><a href="account.php" >Your Account</a></li>
+</ul>
+</li>
+<li>Research
+<ul>
+<li><a href="Research.html#solarsystem">Solar System</a></li>
+<li><a href="Research.html#earth">Earth</a></li>
+<li><a  href="Research.html#planets">Planets</a></li>
+<li><a href="Research.html#satellite">Satellites</a></li>
+<li><a href="Research.html#celestial">Celestial Bodies</a></li>
+<li><a  href="Research.html#Bh">Black Holes</a></li>
+</ul>
+</li>
+<li>Gallery
+<ul>
+<li><a href="Images.html">Images</a></li>
+<li><a href="Videos.html">Videos</a></li>
+<li><a href="NasaLive.html">NASA live</a></li>
+</ul>
+</li>
+<li>Article
+<ul>
+<li><a href="blogs.html">Blogs</a></li>
+
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+
+<div id="contdiv">
+<h2>Contact Us</h2>
+<form action = "ContactUsFormJSP.jsp">
+                
+                    <h4>Personal Information:</h4>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="username">Username:</label>
+                    <input type="text" id="uname" name="uname"><br><br>
+                
+
+                <fieldset>
+                    <legend>Category</legend>
+
+                    <div><label for="query_training" style="font-weight: bold;">Select the category you wish to contact</label></div>
+                    <div class="checkboxes"></div>
+
+                    <input type = "checkbox" name="complaint" value = "Website Information"/>
+                    <label>Website Information</label>
+                    
+                    <input type = "checkbox" name="complaint" value = "Complaints"/>
+                    <label>Complaints</label>
+                    
+                    <input type = "checkbox" name="complaint" value = "Login and membership"/>
+                    <label>Login and membership</label>
+                    
+                    <input type = "checkbox" name="complaint" value = "Business Requirement"/>
+                    <label>Business Requirement</label>
+                    
+                    <input type = "checkbox" name="complaint" value = "Payments"/>
+                    <label>Payments</label>
+
+
+                    <div style="margin-top: 30px;"><label for="query_clients">Who are you ?</label></div>
+                    <div class="checkboxes">
+                            <input type="radio" name="User" value="New User">
+                            <label for = "newUser">New User</label>
+                            <input type="radio" name="User" value="Registered User">
+                            <label for = "regUser">Registered User</label>
+                    </div>
+
+                </fieldset>
+                    <br>
+                <div><label for="query_training" style="font-weight: bold;">Website Experience</label>
+                <select name="area" id="area" style='font-size: 23px;'>
+                    <option value="good">Good</option>
+                    <option value="better">Better</option>
+                    <option value="best">Best</option>
+                    <option value="bad">Bad</option>
+                    <option value="worse">Worse</option>
+                </select></div>
+
+                <h4>Description:</h4>
+                <textarea rows="15" cols="75" name="description" placeholder='Describe your problem'></textarea><br><br>
+                <input type="submit" style='font-size: 23px;' name="submit" value="Submit" >
+            </form>
+</div>
+<br>
+ 
+
+<div class="footer">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+<div>
+<br/>
+<div class="footer">
+<p>
+<h3>
+<center>-=DISCLAIMER=- </center></h3>Using our codes without our permission is strictly prohibited under Section 107 of the Copyright Act 1976. Please contact us for more information. <br/>&copy: Nightsky.co.nf. All Rights Reserved.</p>
+</div>
+</div>
+</body>
+</html>

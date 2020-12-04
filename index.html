@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+
+body {
+color:#ffffff;
+background-image: url("Images/bg.jpg");
+font-family: Arial;
+font-size: 15px;
+
+
+}
+#Header {
+background-color: #d3d3d3;
+margin: 10px;
+height: 200px;
+position:relative;
+}
+#Navbar {
+background-color: #d3d3d3;
+margin: 10px;
+height: 50px;
+line-height: 50px;
+}
+#sidebar1 {
+background-color: #424242;
+float:left;
+width:22%;
+height:600px;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:1%;
+margin-right:1%;
+}
+#sidebar2
+{
+
+background-color: #424242;
+width:22%;
+height:600px;
+float:left;
+margin-top:0px;
+margin-bottom:10px;
+margin-left:1%;
+margin-right:1%;
+
+}
+
+#maincon {
+background-color: #424242;
+float:left;
+width:50%;
+height:600px;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:1%;
+margin-right:1%;
+}
+.footer {
+background-color: #d3d3d3;
+color:#000000;
+width:98%;
+margin:1%;
+clear:both;
+}
+
+
+/** ######MENU SECTION##### **/
+
+#Navbar ul {
+list-style:none;
+margin-left:38px;
+
+}
+#Navbar ul li {
+background-color: #d3d3d3;
+height:50px;
+width:150px;
+text-align:center;
+line-height:50px;
+float:left;
+position:relative;
+color:#000000;
+}
+#Navbar ul li:hover {
+background-color: #000000;
+color: #ffffff;
+border-radius:10px;
+}
+#Navbar ul ul{
+padding:0px;
+margin:0px;
+position:absolute;
+display:none;
+z-index:999;
+}
+#Navbar ul li:hover > ul {
+display:block;
+}
+#Navbar ul ul li a{
+text-decoration:none;
+background-color:#d3d3d3;
+color:#000000;
+display:block;
+border-radius:10px;
+}
+#Navbar ul ul li a:hover {
+background-color: #000000;
+color: #ffffff;
+border-radius:10px;
+}
+.footer ul {
+list-style:none;
+margin-left:20%;
+
+}
+.footer ul li {
+background-color: #d3d3d3;
+height:45px;
+width:15%;
+text-align:center;
+line-height:45px;
+float:left;
+color:#000000;
+}
+
+.footer ul li a{
+text-decoration:none;
+background-color:#d3d3d3;
+color:#000000;
+display:block;
+}
+
+.footer ul li a:hover {
+background-color: #000000;
+color: #ffffff;
+border-radius:10px;
+}
+#logo {
+width:40%;
+max-height:100%;
+margin-top:0px;
+margin-bottom: 0px;
+margin-left:30%;
+margin-right:30%;
+padding:0px;
+position:absolute;
+z-index:3;
+}
+
+ /** #####TEXT SECTION##### **/
+ .home
+ {
+ 	width: 100%;
+ 	height: 30%;
+ }
+.homep{
+font-size:150%
+}
+#header1{
+height:200px;
+width:50%;
+float:right;
+position:absolute;
+z-index:1;
+
+}
+#header2{
+width:50%;
+height:200px;
+float:left;
+position:absolute;
+z-index:1;
+margin-left:50%;
+}
+#dgsn{
+display:none;
+position:fixed;
+top: 50%;
+left: 50%;
+background-color:#42424;;
+border:5px solid #000000;
+width:300px;
+height:230px;
+margin-left:-150px;
+margin-top:-65px;
+-moz-border-radius: 16px;
+-webkit-border-radius: 16px;
+border-radius: 16px;
+box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+-moz-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+-webkit-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+z-index: 9002; 
+}
+#si{
+margin-top:10%;
+}
+
+#loginbtn{
+float:left;
+width:15%;
+margin-left:32%;
+}
+#closebtn{
+float:right;
+width:15%;
+margin-right:32%;
+}
+#fcp {
+top:0px;
+}
+#sidebar1 a{
+background-color:#000000;
+color:#ffffff;
+text-decoration:none;
+display:block;
+margin:0px;
+padding:0px;
+border-radius:8px;
+width:100%;
+height:40px;
+border:1px solid #ffffff;
+}
+#sidebar1 ul{
+list-style:none;
+background-color: #424242;
+width:100%;
+margin:0px;
+padding:0px;
+}
+#sidebar1 ul li {
+background-color: #424242;
+height:40px;
+width:90%;
+text-align:left;
+line-height:40px;
+margin:0px;
+padding:0px;
+bottom:5px;
+}
+#sidebar1 a:hover{
+background-color:#ffffff;
+color:#000000;
+}
+#btn_login
+	{
+		margin-left: 2%;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btn_login:hover{
+  background-color: black;
+  color: white;
+}
+#btn_register
+	{
+		margin-left: 10%;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btn_register:hover{
+  background-color: black;
+  color: white;
+}
+</style>
+
+<title>
+NightSky
+</title>
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+<div id="Header">
+<img id="logo" src="Images/logo.png"/>
+<img id="header1" src="Images/
+header1.jpg"/>
+
+<img id="header2" src="Images/header2.jpg"/>
+
+</div>
+<div id="Navbar">
+<ul>
+<li>Home
+<ul>
+<li><a href="index.html">HomePage</a></li>
+<li><a href="#" onclick="disp()">Courses</a></li>
+<li><a href="#" onclick="disp()">Your Account</a></li>
+</ul>
+</li>
+<li>Research
+<ul>
+<li><a href="#" onclick="disp()">Solar System</a></li>
+<li><a href="#" onclick="disp()">Earth</a></li>
+<li><a href="#" onclick="disp()">Planets</a></li>
+<li><a href="#" onclick="disp()">Satellites</a></li>
+<li><a href="#" onclick="disp()">Celestial Bodies</a></li>
+<li><a href="#" onclick="disp()">Black Holes</a></li>
+</ul>
+</li>
+<li>Gallery
+<ul>
+<li><a href="#" onclick="disp()">Images</a></li>
+<li><a href="#" onclick="disp()">Videos</a></li>
+<li><a href="#" onclick="disp()">NASA live</a></li>
+</ul>
+</li>
+<li>Article
+<ul>
+<li><a href="#" onclick="disp()">Blogs</a></li>
+
+</ul>
+</li>
+</ul>
+
+</div>
+<div id="dgsn">
+     <?php
+require 'connect.inc.php';
+require 'core.inc.php';
+
+?>
+ <center><form id="si" action='login.php' method='post'>
+
+Username:<br />
+<input type='text' name='username' id='username' placeholder='username'><br />
+
+Password:<br />
+  <input type='password' name='password' id='password' placeholder='password'><br />
+  
+</center>
+  <div id="loginbtn"><input type='submit' name='submit' value='Login' /> </div>
+</form>
+   <div id="closebtn"><button onclick="dispd()" id="signin">Close</button>
+</div>
+</div>
+
+<div id="sidebar1">
+<h3><u>Refrences:</u></h3>
+<p>
+Here is the list of some selected website related to Space and Technology. Click on the link to visit</p>
+<ul>
+<li><a href="https://www.nasa.gov" target="_blank">NASA</a></li>
+<li><a href="http://dos.gov.in/" target="_blank">ISRO</a></li>
+<li><a href="https://en.m.wikipedia.org/wiki/Universe" target="_blank">wikipidea/universe</a></li>
+
+<li><a href="https://www.armaghplanet.com/blog" target="_blank"> Armagh Planetarium</a></li>
+<li><a href="https://www.heavens-above.com" target="_blank">heavens -above.com</a></li>
+<li><a href="https://www.skyandtelescope.com" target="_blank">skyandtelescope.com</a></li>
+<li><a href="https://www.space.com" target="_blank">space.com</a></li>
+<li><a href="https://www.kidsastronomy.com" target="_blank">kidsastronomy.com</a></li>
+</ul>
+
+</div>
+<div id="maincon">
+
+<img class="home" src="Images/home3.jpg"/>
+<h1>NightSky</h1>
+<article class="homep">Universe is full of surprises and wonders. You can find many facts regarding it that can astound you and it has more to offer you. The universe is believed to be at least 10 billion light years in diameter and contains a vast number of galaxies; it has been expanding since its creation in the Big Bang about 13 billion years ago. It includes planets, moons, minor planets, stars, galaxies, and all matter and energy. Albert Einstein describe universe to be infinite and according to Stephen Hawking the universe can and will create itself from nothing.</article>
+<article class="homep">Welcome to NightSky.co, the ultimate website where you can find everything about the outer world. If you have an intense desire to explore the universe, then you are in the right place. Prepare yourself for the thrilling ride and get started.</article>
+</div>
+
+<br>
+<div id="sidebar2">
+<p id="fcp">
+<h3><u>Salient Features</u></h3>
+
+Some of the features of Nightsky are:
+<ul>
+<li>Test how much did you learned from this website in our Courses section.</li>
+<li>Never miss any National and International news in our News section.</li>
+<li>Enhance your knowledge by reading, posting and sharing blogs by different users across the world.</li>
+<li>Get a glimpse of rare and unseen images from the universe.</li>
+<li>Amaze your friends by knowing astonishing facts from this site.<br/></li>
+</ul>
+		    <button id="btn_register">Register</button>
+</p>
+Already have an account?
+ <button id="btn_login">Login</button>
+</div>
+
+
+<footer class="footer">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+<div>
+<br/>
+<footer class="footer">
+<p>
+<h3>
+<center>-=DISCLAIMER=- </center></h3>Using our codes without our permission is strictly prohibited under Section 107 of the Copyright Act 1976. Please contact us for more information. <br/>&copy: Nightsky.co.nf. All Rights Reserved.</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+	   document.getElementById("btn_login").onclick = function () {
+        location.href = "Login.html";
+    };
+     document.getElementById("btn_register").onclick = function () {
+        location.href = "registration.html";
+    };
+</script>
+</html>
